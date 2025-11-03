@@ -1,0 +1,33 @@
+import React from "react";
+import "../global.css";
+
+const ContactUs = () => {
+  return (
+    <div className="contact-container">
+      <div className="contact-card">
+        {/* LEFT IMAGE */}
+        <div className="contact-image"></div>
+
+        {/* RIGHT FORM */}
+        <div className="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+
+          <div className="contact-footer">
+            <p>
+              Or reach us at{" "}
+              <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContactUs;
